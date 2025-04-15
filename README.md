@@ -12,3 +12,4 @@
 - `test_get_list_of_favorite_books_one_book` - проверяет вывод списка избранного
 - `test_get_list_of_favorites_books_empty_list` - проверяет вывод пустого списка избранного
 - `test_get_books_with_specific_genre` (параметризованный) - проверяет фильтрацию по жанрам
+- `test_get_book_genre_for_existing_genre` - проверяет вывод жанра книги по её имени

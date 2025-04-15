@@ -83,3 +83,11 @@ class TestBooksCollector:
             'Оно': 'Ужасы'
         }
         assert len(collector.get_books_with_specific_genre(genre)) == count
+
+    def test_get_book_genre_for_existing_genre(self):
+        collector = BooksCollector()
+        collector.books_genre = {
+            'Тайная комната': 'Фантастика',
+            'Оно': 'Ужасы'
+        }
+        assert collector.get_book_genre('Оно') == 'Ужасы'
